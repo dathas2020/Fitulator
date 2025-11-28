@@ -1,0 +1,85 @@
+body {
+  background-color: black;
+  margin: 20px;
+  font-family: sans-serif;
+}
+pre {
+  color: white;
+}
+h3 {
+  color: white;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.box {
+  box-shadow: red;
+  background-color: rgb(171, 33, 33);
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  width: 120%;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn1 {
+  width: 90%;
+  background-color: white;
+
+  margin: 12px;
+}
+
+.card-header {
+  margin: 2px;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.bi-star-fill,
+.bi-star-half {
+  color: goldenrod;
+  font-size: 25px;
+}
+
+.bg-image {
+  background-image: url("https://img.freepik.com/free-photo/excited-girl-scream-joy-making-fist-pump-holding-shopping-bag-rejoicing-standing-dress-ove_1258-121722.jpg?t=st=1757486004~exp=1757489604~hmac=ff034d25eea7c53f8e70335657da4b73774b331fd1490899e4cb1490bf0eb3fa&w=2000");
+  height: 450px;
+  background-size: 100% 100%;
+}
+
+h1 {
+  text-align: end;
+  padding-top: 150px;
+  padding-right: 100px;
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  transform: translateY(-20px);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="wstyle.css" />
+  </head>
+  <body>
+    <button id="backBtn" type="button" onclick="window.location='workout.html'">← Back</button>
+    <wheading id="wh">8 Week Weight Loss Workouts</wheading>
+    <div id="plans">
+      <div class="plan" id="workout1" onclick="daily()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Week 1</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="workout2" onclick="daily()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Week 2</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="workout3" onclick="daily()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Week 3</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="workout4" onclick="daily()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Week 4</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="workout5" onclick="daily()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Week 5</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="workout6" onclick="daily()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Week 6</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="workout7" onclick="daily()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Week 7</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="workout8" onclick="daily()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Week 8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function daily(){
+        window.location = 'workout4.html';
+      }
+    </script>
+  </body>
+</html>

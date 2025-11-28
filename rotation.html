@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitulator</title>
+    <link rel="stylesheet" href="rotation.css">
+   
+</head>
+<body>
+  <button id="backBtn" onclick="window.location='home.html'">← Back</button>
+  <div id="img1">
+      <img  src="foodbowl3.png" >
+  </div>
+    <div>
+      <div class="block-1">
+        <h1 ><i>Hungry yet?</i></h1>
+      </div>
+      <div class="block-1" id="block1-font">
+        <h2>Choose your meal plan</h2>
+      </div>
+      <div class="block-1">
+        <button class="button" id="arrange-0">Weight loss meal plan</button>
+        <button class="button" id="arrange-1">Weight gain meal plan</button>
+        <button class="button" id="arrange-2">Maintenance meal plan</button>
+      </div >
+
+
+      <div class="block-1">
+        <div class="block-2" id="arrange0" style="display: flex;"><br>
+          <img class="img1"  src="weightloss1.png" >
+          <h1>Weight Loss Meal Plan</h1>
+          <h3 >1200-1400 cal</h3>
+          <button onclick="window.location.href='foodpage2.html'" class="button">Start Your Journey</button><br>
+          <h1></h1>
+        </div>
+      
+        <div class="block-2" id="arrange1" style="display:none;"><br>
+          <img  class="img1" id="img2" src="weightgain.jpg" >
+          <h1>Weight Gain Meal Plan</h1>
+          <h3 >1600-1800 cal</h3>
+          <button onclick="window.location.href='foodpage.html'" class="button">Start Your Journey</button><br>
+          <h1></h1>
+        </div>
+
+        <div class="block-2" id="arrange2" style="display:none;"><br>
+          <img class="img1" id="img3" src="maintainence.jpg" >
+          <h1>maintainence Meal Plan</h1>
+          <h3 >1400-1600 cal</h3>
+          <button onclick="window.location.href='foodpage.html'" class="button" id="startbtn">Start Your Journey</button><br>
+          <h1></h1>
+        </div>
+      </div>
+     
+       
+    
+    </div>
+  
+    <script src="food.js"></script>
+  </div>
+</html>

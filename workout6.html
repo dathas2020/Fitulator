@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="wstyle.css" />
+  </head>
+  <body>
+    <button id="backBtn" type="button" onclick="window.location='workout.html'">
+      ← Back
+    </button>
+    <wheading id="wh">Day 1</wheading>
+    <div id="plans">
+      <div class="plan" id="day-wise3">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title" id="w">Chest & Shoulders + Walk 10,000 steps</span>
+          </div>
+        </div>
+      </div>
+      <div id="buttons">
+        <button class="Btn" id="prevBtn" type="button">Back</button>
+        <button class="Btn" id="nextBtn" type="button">Next</button>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const whEl = document.getElementById("wh");
+        const wEl = document.getElementById("w");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const dayWise = document.getElementById("day-wise3");
+
+        let count = parseInt(wEl.textContent, 10) || 1;
+        const MIN = 1,
+          MAX = 7;
+
+        function update() {
+          whEl.textContent = "Day " + count;
+          if (count == 1) {
+            dayWise.style.backgroundImage = "url('Day2.png')";
+            wEl.textContent = "Chest & Shoulders + Walk 10,000 steps";
+            
+          } else if (count == 2) {
+            dayWise.style.backgroundImage = "url('Day5.png')";
+            wEl.textContent = "Full body + Walk 10,000 steps";
+            
+          } else if (count == 3) {
+            dayWise.style.backgroundImage = "url('Day3.png')";
+            wEl.textContent = "Back & Arms + Walk 10,000 steps";
+          } else if (count == 4) {
+            dayWise.style.backgroundImage = "url('Day6.png')";
+            wEl.textContent = "Outdoor Activities";
+            
+          } else if (count == 5) {
+            dayWise.style.backgroundImage = "url('Day1.png')";
+            wEl.textContent = "Legs + Walk 10,000 steps";
+            
+          } else if (count == 6) {
+            dayWise.style.backgroundImage = "url('Day1.png')";
+            wEl.textContent = "Legs + Walk 20,000 steps";
+            
+          } else {
+            dayWise.style.backgroundImage = "url('Day7.png')";
+            wEl.textContent = "Yoga + stretching";
+          }
+        }
+
+        prevBtn.addEventListener("click", function () {
+          if (count > MIN) {
+            count--;
+            update();
+          }
+        });
+
+        nextBtn.addEventListener("click", function () {
+          if (count < MAX) {
+            count++;
+            update();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

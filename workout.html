@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="wstyle.css" />
+  </head>
+  <body>
+    <button id="backBtn" type="button" onclick="window.location='home.html'">← Back</button>
+    <wheading id="wh">Plans</wheading>
+    <div id="plans">
+      <div class="plan" id="plan1" onclick="wloss()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Weight loss</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="plan2" onclick="wgain()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Weight Gain</span>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="plan3" onclick="wfit()">
+        <div class="plan-overlay">
+          <div class="plan-box">
+            <span class="plan-title">Fitness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function wloss(){
+            window.location = 'workout1.html'
+        }
+        function wgain(){
+            window.location = 'workout2.html'
+        }
+        function wfit(){
+            window.location = 'workout3.html'
+        }
+    </script>
+  </body>
+</html>
